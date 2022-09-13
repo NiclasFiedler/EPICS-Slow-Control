@@ -1,0 +1,2 @@
+org.phoebus.pv.ca/addr_list=134.176.17.245 ## IPs need to be changed to current IOCs
+org.phoebus.pv.ca/addr_list+=134.176.17.200 ##

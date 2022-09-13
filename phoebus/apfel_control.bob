@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <width>610</width>
+  <height>466</height>
+  <widget type="group" version="2.0.0">
+    <name>APFEL Control</name>
+    <width>610</width>
+    <height>466</height>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_3</name>
+      <x>302</x>
+      <y>52</y>
+      <width>1</width>
+      <height>143</height>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):APFEL:$(chipid):CALIB:HW</pv_name>
+          <value>1</value>
+          <description>WritePV</description>
+        </action>
+      </actions>
+      <text>APFEL Autocalibration</text>
+      <x>6</x>
+      <y>72</y>
+      <width>263</width>
+      <height>26</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_2</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):APFEL:$(chipid):CALIB:SW</pv_name>
+          <value>1</value>
+          <description>WritePV</description>
+        </action>
+      </actions>
+      <text>Software Autocalibration</text>
+      <x>6</x>
+      <y>111</y>
+      <width>263</width>
+      <height>26</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_3</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):APFEL:$(chipid):RESET:ALL</pv_name>
+          <value>1</value>
+          <description>WritePV</description>
+        </action>
+      </actions>
+      <text>Global Reset</text>
+      <x>6</x>
+      <y>151</y>
+      <width>263</width>
+      <height>26</height>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Channel 1</text>
+      <x>390</x>
+      <y>84</y>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>Channel 2</text>
+      <x>480</x>
+      <y>84</y>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_5</name>
+      <x>2</x>
+      <y>222</y>
+      <width>572</width>
+      <height>40</height>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>DAC</text>
+      <x>12</x>
+      <y>222</y>
+      <width>106</width>
+      <height>40</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>Dec</text>
+      <x>202</x>
+      <y>222</y>
+      <width>77</width>
+      <height>40</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>Bin</text>
+      <x>332</x>
+      <y>222</y>
+      <width>60</width>
+      <height>40</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <text>1</text>
+      <x>12</x>
+      <y>268</y>
+      <width>40</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner</name>
+      <pv_name>SAA$(boardid):APFEL:$(chipid):DAC:1:SET</pv_name>
+      <x>472</x>
+      <y>278</y>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <maximum>1023.0</maximum>
+      <increment>5.0</increment>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_1</name>
+      <pv_name>SAA$(boardid):APFEL:$(chipid):DAC:2:SET</pv_name>
+      <x>472</x>
+      <y>318</y>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <maximum>1023.0</maximum>
+      <increment>5.0</increment>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_2</name>
+      <pv_name>SAA$(boardid):APFEL:$(chipid):DAC:3:SET</pv_name>
+      <x>472</x>
+      <y>358</y>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <maximum>1023.0</maximum>
+      <increment>5.0</increment>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_3</name>
+      <pv_name>SAA$(boardid):APFEL:$(chipid):DAC:4:SET</pv_name>
+      <x>472</x>
+      <y>398</y>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <maximum>1023.0</maximum>
+      <increment>5.0</increment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_11</name>
+      <text>2</text>
+      <x>12</x>
+      <y>308</y>
+      <width>40</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_12</name>
+      <text>3</text>
+      <x>12</x>
+      <y>348</y>
+      <width>40</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_13</name>
+      <text>4</text>
+      <x>12</x>
+      <y>388</y>
+      <width>40</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_6</name>
+      <x>6</x>
+      <y>308</y>
+      <width>440</width>
+      <height>1</height>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_8</name>
+      <x>6</x>
+      <y>348</y>
+      <width>440</width>
+      <height>1</height>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_9</name>
+      <x>6</x>
+      <y>388</y>
+      <width>440</width>
+      <height>1</height>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_10</name>
+      <x>6</x>
+      <y>428</y>
+      <width>440</width>
+      <height>1</height>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_9</name>
+      <actions>
+        <action type="open_display">
+          <file>frontend.bob</file>
+          <target>replace</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text>Back</text>
+      <x>2</x>
+      <y>2</y>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_12</name>
+      <x>12</x>
+      <y>42</y>
+      <width>560</width>
+      <height>1</height>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_15</name>
+      <text>BoardID: $(boardid)</text>
+      <x>256</x>
+      <y>2</y>
+      <width>80</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_18</name>
+      <text>ChipID: $(chipid)</text>
+      <x>346</x>
+      <y>2</y>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <pv_name>SAA$(boardid):APFEL:$(chipid):DAC:1:GET</pv_name>
+      <x>96</x>
+      <y>262</y>
+      <height>50</height>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <format>4</format>
+      <vertical_alignment>1</vertical_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>SAA$(boardid):APFEL:$(chipid):DAC:2:GET</pv_name>
+      <x>96</x>
+      <y>302</y>
+      <height>50</height>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <format>4</format>
+      <vertical_alignment>1</vertical_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>SAA$(boardid):APFEL:$(chipid):DAC:3:GET</pv_name>
+      <x>96</x>
+      <y>342</y>
+      <height>50</height>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <format>4</format>
+      <vertical_alignment>1</vertical_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>SAA$(boardid):APFEL:$(chipid):DAC:4:GET</pv_name>
+      <x>96</x>
+      <y>382</y>
+      <height>50</height>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <format>4</format>
+      <vertical_alignment>1</vertical_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_12</name>
+      <pv_name>SAA$(boardid):VERSION</pv_name>
+      <x>106</x>
+      <y>2</y>
+      <width>121</width>
+      <height>30</height>
+      <transparent>true</transparent>
+      <format>4</format>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_13</name>
+      <pv_name>SAA$(boardid):APFEL:$(chipid):DAC:4:GET</pv_name>
+      <x>206</x>
+      <y>382</y>
+      <height>50</height>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <vertical_alignment>1</vertical_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_14</name>
+      <pv_name>SAA$(boardid):APFEL:$(chipid):DAC:3:GET</pv_name>
+      <x>206</x>
+      <y>342</y>
+      <height>50</height>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <vertical_alignment>1</vertical_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_15</name>
+      <pv_name>SAA$(boardid):APFEL:$(chipid):DAC:2:GET</pv_name>
+      <x>206</x>
+      <y>302</y>
+      <height>50</height>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <vertical_alignment>1</vertical_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_16</name>
+      <pv_name>SAA$(boardid):APFEL:$(chipid):DAC:1:GET</pv_name>
+      <x>206</x>
+      <y>262</y>
+      <height>50</height>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <format>1</format>
+      <vertical_alignment>1</vertical_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_17</name>
+      <pv_name>SAA$(boardid):APFEL:$(chipid):DAC:4:GET</pv_name>
+      <x>326</x>
+      <y>382</y>
+      <height>50</height>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <format>10</format>
+      <vertical_alignment>1</vertical_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_18</name>
+      <pv_name>SAA$(boardid):APFEL:$(chipid):DAC:3:GET</pv_name>
+      <x>326</x>
+      <y>342</y>
+      <height>50</height>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <format>10</format>
+      <vertical_alignment>1</vertical_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_19</name>
+      <pv_name>SAA$(boardid):APFEL:$(chipid):DAC:2:GET</pv_name>
+      <x>326</x>
+      <y>302</y>
+      <height>50</height>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <format>10</format>
+      <vertical_alignment>1</vertical_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_20</name>
+      <pv_name>SAA$(boardid):APFEL:$(chipid):DAC:1:GET</pv_name>
+      <x>326</x>
+      <y>262</y>
+      <height>50</height>
+      <background_color>
+        <color name="Transparent" red="255" green="255" blue="255" alpha="0">
+        </color>
+      </background_color>
+      <format>10</format>
+      <vertical_alignment>1</vertical_alignment>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_19</name>
+      <text>Hex</text>
+      <x>92</x>
+      <y>222</y>
+      <width>77</width>
+      <height>40</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button</name>
+      <pv_name>SAA$(boardid):APFEL:$(chipid):SETAMP:HIGH:CH1</pv_name>
+      <x>390</x>
+      <y>114</y>
+      <width>60</width>
+      <height>20</height>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_20</name>
+      <text>High Gain:</text>
+      <x>310</x>
+      <y>104</y>
+      <width>70</width>
+      <height>40</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_1</name>
+      <pv_name>SAA$(boardid):APFEL:$(chipid):SETAMP:HIGH:CH2
+
+</pv_name>
+      <x>480</x>
+      <y>114</y>
+      <width>60</width>
+      <height>20</height>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>Set DAC</text>
+      <x>472</x>
+      <y>222</y>
+      <width>60</width>
+      <height>40</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+</display>

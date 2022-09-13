@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <width>1340</width>
+  <height>139</height>
+  <widget type="group" version="2.0.0">
+    <name>BoardID: $(boardid)</name>
+    <width>1340</width>
+    <height>139</height>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle</name>
+      <x>2</x>
+      <y>2</y>
+      <width>984</width>
+      <height>101</height>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Header_Background" red="77" green="77" blue="77">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_4</name>
+      <width>984</width>
+      <height>101</height>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <actions>
+        <action type="open_display">
+          <file>apfel_control.bob</file>
+          <macros>
+            <boardid>$(boardid)</boardid>
+            <chipid>1</chipid>
+          </macros>
+          <target>replace</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text>APFEL 1</text>
+      <x>12</x>
+      <y>12</y>
+      <width>71</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions>
+        <action type="open_display">
+          <file>apfel_control.bob</file>
+          <macros>
+            <boardid>$(boardid)</boardid>
+            <chipid>2</chipid>
+          </macros>
+          <target>replace</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text>APFEL 2</text>
+      <x>92</x>
+      <y>12</y>
+      <width>73</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_2</name>
+      <actions>
+        <action type="open_display">
+          <file>apfel_control.bob</file>
+          <macros>
+            <boardid>$(boardid)</boardid>
+            <chipid>3</chipid>
+          </macros>
+          <target>replace</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text>APFEL 3</text>
+      <x>172</x>
+      <y>12</y>
+      <width>72</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_3</name>
+      <actions>
+        <action type="open_display">
+          <file>apfel_control.bob</file>
+          <macros>
+            <boardid>$(boardid)</boardid>
+            <chipid>4</chipid>
+          </macros>
+          <target>replace</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text>APFEL 4</text>
+      <x>252</x>
+      <y>12</y>
+      <width>76</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_4</name>
+      <actions>
+        <action type="open_display">
+          <file>hvcontrol.bob</file>
+          <macros>
+            <boardid>$(boardid)</boardid>
+          </macros>
+          <target>replace</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text>HV-Control</text>
+      <x>482</x>
+      <y>12</y>
+      <height>71</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_6</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):APFEL:ALL:CALIB:HW</pv_name>
+          <value>1</value>
+          <description>WritePV</description>
+        </action>
+      </actions>
+      <text>Autocalibrate All</text>
+      <x>12</x>
+      <y>52</y>
+      <width>126</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_7</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):APFEL:ALL:CALIB:SW</pv_name>
+          <value>1</value>
+          <description>WritePV</description>
+        </action>
+      </actions>
+      <text>Software Autocalibrate All</text>
+      <x>152</x>
+      <y>52</y>
+      <width>180</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_8</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):APFEL:1:SETAMP:HIGH:CH1</pv_name>
+          <value>1</value>
+          <description>APFEL 1 CH1</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):APFEL:1:SETAMP:HIGH:CH2</pv_name>
+          <value>1</value>
+          <description>APFEL 1 CH2</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):APFEL:2:SETAMP:HIGH:CH1</pv_name>
+          <value>1</value>
+          <description>APFEL 2 CH1</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):APFEL:2:SETAMP:HIGH:CH2</pv_name>
+          <value>1</value>
+          <description>APFEL 2 CH2</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):APFEL:3:SETAMP:HIGH:CH1</pv_name>
+          <value>1</value>
+          <description>APFEL 3 CH1</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):APFEL:3:SETAMP:HIGH:CH2</pv_name>
+          <value>1</value>
+          <description>APFEL 3 CH2</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):APFEL:4:SETAMP:HIGH:CH1</pv_name>
+          <value>1</value>
+          <description>APFEL 4 CH1</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):APFEL:4:SETAMP:HIGH:CH2</pv_name>
+          <value>1</value>
+          <description>APFEL 4 CH2</description>
+        </action>
+      </actions>
+      <text>All High Gain</text>
+      <x>342</x>
+      <y>52</y>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>SAA$(boardid):VERSION</pv_name>
+      <x>1192</x>
+      <y>52</y>
+      <width>121</width>
+      <height>30</height>
+      <transparent>true</transparent>
+      <format>4</format>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_10</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):EEPROM:GET:VERSION.PROC</pv_name>
+          <value>1</value>
+          <description>Refresh EEPROM Version</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):VERSION.PROC</pv_name>
+          <value>1</value>
+          <description>Refresh SAA Version</description>
+        </action>
+      </actions>
+      <text>Refresh</text>
+      <x>994</x>
+      <y>51</y>
+      <width>110</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_12</name>
+      <x>602</x>
+      <y>12</y>
+      <width>2</width>
+      <height>70</height>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>SAA$(boardid):LM75:TEMP</pv_name>
+      <x>684</x>
+      <y>11</y>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_4</name>
+      <pv_name>SAA$(boardid):SHT21:HUM</pv_name>
+      <x>726</x>
+      <y>72</y>
+      <width>108</width>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_5</name>
+      <pv_name>SAA$(boardid):SHT21:TEMP</pv_name>
+      <x>734</x>
+      <y>41</y>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>HV-Board:</text>
+      <x>614</x>
+      <y>11</y>
+      <width>75</width>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>Backplane Temp.:</text>
+      <x>614</x>
+      <y>41</y>
+      <width>121</width>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_13</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):LM75:TEMP</pv_name>
+          <value>0</value>
+          <description>LM75</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):SHT21:TEMP</pv_name>
+          <value>0</value>
+          <description>SHT21 TEMP</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):SHT21:HUM</pv_name>
+          <value>0</value>
+          <description>SHT21 HUM</description>
+        </action>
+      </actions>
+      <text>Update Sensors</text>
+      <x>994</x>
+      <y>11</y>
+      <width>110</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_15</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):APFEL:1:SETAMP:HIGH:CH1</pv_name>
+          <value>0</value>
+          <description>APFEL 1 CH1</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):APFEL:1:SETAMP:HIGH:CH2</pv_name>
+          <value>0</value>
+          <description>APFEL 1 CH2</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):APFEL:2:SETAMP:HIGH:CH1</pv_name>
+          <value>0</value>
+          <description>APFEL 2 CH1</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):APFEL:2:SETAMP:HIGH:CH2</pv_name>
+          <value>0</value>
+          <description>APFEL 2 CH2</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):APFEL:3:SETAMP:HIGH:CH1</pv_name>
+          <value>0</value>
+          <description>APFEL 3 CH1</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):APFEL:3:SETAMP:HIGH:CH2</pv_name>
+          <value>0</value>
+          <description>APFEL 3 CH2</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):APFEL:4:SETAMP:HIGH:CH1</pv_name>
+          <value>0</value>
+          <description>APFEL 4 CH1</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):APFEL:4:SETAMP:HIGH:CH2</pv_name>
+          <value>0</value>
+          <description>APFEL 4 CH2</description>
+        </action>
+      </actions>
+      <text>All Low Gain</text>
+      <x>342</x>
+      <y>12</y>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_9</name>
+      <pv_name>SAA$(boardid):SHT21:HUM.SCAN</pv_name>
+      <x>914</x>
+      <y>71</y>
+      <width>60</width>
+      <height>18</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <items>
+        <item></item>
+      </items>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_10</name>
+      <pv_name>SAA$(boardid):LM75:TEMP.SCAN</pv_name>
+      <x>914</x>
+      <y>11</y>
+      <width>60</width>
+      <height>20</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <items>
+        <item></item>
+      </items>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_11</name>
+      <pv_name>SAA$(boardid):SHT21:TEMP.SCAN</pv_name>
+      <x>914</x>
+      <y>41</y>
+      <width>60</width>
+      <height>20</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <items>
+        <item></item>
+      </items>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <text>Scanrate:</text>
+      <x>844</x>
+      <y>41</y>
+      <width>63</width>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>Scanrate:</text>
+      <x>844</x>
+      <y>71</y>
+      <width>76</width>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_8</name>
+      <text>Scanrate:</text>
+      <x>844</x>
+      <y>11</y>
+      <width>61</width>
+      <height>23</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_9</name>
+      <text>Backplane Hum.:</text>
+      <x>614</x>
+      <y>71</y>
+      <width>121</width>
+      <height>21</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_13</name>
+      <x>462</x>
+      <y>12</y>
+      <width>2</width>
+      <height>70</height>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>SAA$(boardid):EEPROM:GET:VERSION</pv_name>
+      <x>1192</x>
+      <y>12</y>
+      <width>121</width>
+      <height>30</height>
+      <transparent>true</transparent>
+      <format>1</format>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>EEPROM:</text>
+      <x>1122</x>
+      <y>12</y>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>SAA:</text>
+      <x>1122</x>
+      <y>52</y>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+</display>

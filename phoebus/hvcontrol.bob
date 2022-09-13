@@ -1,0 +1,1340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <width>778</width>
+  <height>486</height>
+  <widget type="group" version="2.0.0">
+    <name>HV-Control</name>
+    <width>776</width>
+    <height>486</height>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_5</name>
+      <x>2</x>
+      <y>42</y>
+      <width>740</width>
+      <height>40</height>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_20</name>
+      <pv_name>SAA$(boardid):DAC:GET:CH2</pv_name>
+      <x>542</x>
+      <y>202</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_21</name>
+      <pv_name>SAA$(boardid):DAC:GET:CH1</pv_name>
+      <x>542</x>
+      <y>162</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_22</name>
+      <pv_name>SAA$(boardid):DAC:GET:CH8</pv_name>
+      <x>542</x>
+      <y>122</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_23</name>
+      <pv_name>SAA$(boardid):DAC:GET:CH7</pv_name>
+      <x>542</x>
+      <y>82</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_5</name>
+      <pv_name>SAA$(boardid):DAC:SET:CH7</pv_name>
+      <x>662</x>
+      <y>92</y>
+      <width>80</width>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <maximum>1023.0</maximum>
+      <increment>5.0</increment>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_6</name>
+      <pv_name>SAA$(boardid):DAC:SET:CH8</pv_name>
+      <x>662</x>
+      <y>132</y>
+      <width>80</width>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <maximum>1023.0</maximum>
+      <increment>5.0</increment>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_7</name>
+      <pv_name>SAA$(boardid):DAC:SET:CH1</pv_name>
+      <x>662</x>
+      <y>172</y>
+      <width>80</width>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <maximum>1023.0</maximum>
+      <increment>5.0</increment>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_8</name>
+      <pv_name>SAA$(boardid):DAC:SET:CH2</pv_name>
+      <x>662</x>
+      <y>212</y>
+      <width>80</width>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <maximum>1023.0</maximum>
+      <increment>5.0</increment>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_9</name>
+      <pv_name>SAA$(boardid):DAC:SET:CH5</pv_name>
+      <x>662</x>
+      <y>252</y>
+      <width>80</width>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <maximum>1023.0</maximum>
+      <increment>5.0</increment>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_10</name>
+      <pv_name>SAA$(boardid):DAC:SET:CH6</pv_name>
+      <x>662</x>
+      <y>292</y>
+      <width>80</width>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <maximum>1023.0</maximum>
+      <increment>5.0</increment>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_11</name>
+      <pv_name>SAA$(boardid):DAC:SET:CH3</pv_name>
+      <x>662</x>
+      <y>332</y>
+      <width>80</width>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <maximum>1023.0</maximum>
+      <increment>5.0</increment>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_12</name>
+      <pv_name>SAA$(boardid):DAC:SET:CH4</pv_name>
+      <x>662</x>
+      <y>372</y>
+      <width>80</width>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <maximum>1023.0</maximum>
+      <increment>5.0</increment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_20</name>
+      <x>2</x>
+      <y>402</y>
+      <width>620</width>
+      <height>1</height>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_21</name>
+      <x>2</x>
+      <y>322</y>
+      <width>620</width>
+      <height>1</height>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_22</name>
+      <x>2</x>
+      <y>282</y>
+      <width>620</width>
+      <height>1</height>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_23</name>
+      <x>2</x>
+      <y>242</y>
+      <width>620</width>
+      <height>1</height>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_24</name>
+      <x>2</x>
+      <y>202</y>
+      <width>620</width>
+      <height>1</height>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_26</name>
+      <x>2</x>
+      <y>162</y>
+      <width>620</width>
+      <height>1</height>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_27</name>
+      <x>2</x>
+      <y>122</y>
+      <width>620</width>
+      <height>1</height>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_28</name>
+      <x>2</x>
+      <y>412</y>
+      <width>740</width>
+      <height>40</height>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_33</name>
+      <text>Control All</text>
+      <x>12</x>
+      <y>412</y>
+      <height>40</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_10</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH7</pv_name>
+          <value>0</value>
+          <description>ch7</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH8</pv_name>
+          <value>0</value>
+          <description>ch8</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH1</pv_name>
+          <value>0</value>
+          <description>CH1</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH2</pv_name>
+          <value>0</value>
+          <description>CH2</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH5</pv_name>
+          <value>0</value>
+          <description>CH5</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH6</pv_name>
+          <value>0</value>
+          <description>CH6</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH3</pv_name>
+          <value>0</value>
+          <description>CH3</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH4</pv_name>
+          <value>0</value>
+          <description>CH4</description>
+        </action>
+      </actions>
+      <text>Read Voltage</text>
+      <x>242</x>
+      <y>422</y>
+      <width>92</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box</name>
+      <pv_name>SAA$(boardid):ADS:CURRENT:CH7.SCAN</pv_name>
+      <x>272</x>
+      <y>92</y>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <items>
+        <item></item>
+      </items>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_35</name>
+      <text>Scanrate</text>
+      <x>270</x>
+      <y>42</y>
+      <height>40</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_1</name>
+      <pv_name>SAA$(boardid):ADS:CURRENT:CH8.SCAN</pv_name>
+      <x>272</x>
+      <y>132</y>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <items>
+        <item></item>
+      </items>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_2</name>
+      <pv_name>SAA$(boardid):ADS:CURRENT:CH2.SCAN</pv_name>
+      <x>272</x>
+      <y>212</y>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <items>
+        <item></item>
+      </items>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_3</name>
+      <pv_name>SAA$(boardid):ADS:CURRENT:CH1.SCAN</pv_name>
+      <x>272</x>
+      <y>172</y>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <items>
+        <item></item>
+      </items>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_4</name>
+      <pv_name>SAA$(boardid):ADS:CURRENT:CH6.SCAN</pv_name>
+      <x>272</x>
+      <y>292</y>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <items>
+        <item></item>
+      </items>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_5</name>
+      <pv_name>SAA$(boardid):ADS:CURRENT:CH5.SCAN</pv_name>
+      <x>272</x>
+      <y>252</y>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <items>
+        <item></item>
+      </items>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_6</name>
+      <pv_name>SAA$(boardid):ADS:CURRENT:CH4.SCAN</pv_name>
+      <x>272</x>
+      <y>372</y>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <items>
+        <item></item>
+      </items>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_7</name>
+      <pv_name>SAA$(boardid):ADS:CURRENT:CH3.SCAN</pv_name>
+      <x>272</x>
+      <y>332</y>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <items>
+        <item></item>
+      </items>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_8</name>
+      <pv_name>SAA$(boardid):ADS:VOLTAGE:CH7.SCAN</pv_name>
+      <x>452</x>
+      <y>92</y>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <items>
+        <item></item>
+      </items>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_36</name>
+      <text>Scanrate</text>
+      <x>450</x>
+      <y>42</y>
+      <height>40</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_9</name>
+      <pv_name>SAA$(boardid):ADS:VOLTAGE:CH8.SCAN</pv_name>
+      <x>452</x>
+      <y>132</y>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <items>
+        <item></item>
+      </items>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_10</name>
+      <pv_name>SAA$(boardid):ADS:VOLTAGE:CH2.SCAN</pv_name>
+      <x>452</x>
+      <y>212</y>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <items>
+        <item></item>
+      </items>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_11</name>
+      <pv_name>SAA$(boardid):ADS:VOLTAGE:CH1.SCAN</pv_name>
+      <x>452</x>
+      <y>172</y>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <items>
+        <item></item>
+      </items>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_12</name>
+      <pv_name>SAA$(boardid):ADS:VOLTAGE:CH6.SCAN</pv_name>
+      <x>452</x>
+      <y>292</y>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <items>
+        <item></item>
+      </items>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_13</name>
+      <pv_name>SAA$(boardid):ADS:VOLTAGE:CH5.SCAN</pv_name>
+      <x>452</x>
+      <y>252</y>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <items>
+        <item></item>
+      </items>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_14</name>
+      <pv_name>SAA$(boardid):ADS:VOLTAGE:CH4.SCAN</pv_name>
+      <x>452</x>
+      <y>372</y>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <items>
+        <item></item>
+        <item>Item 1</item>
+      </items>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_15</name>
+      <pv_name>SAA$(boardid):ADS:VOLTAGE:CH3.SCAN</pv_name>
+      <x>452</x>
+      <y>332</y>
+      <width>50</width>
+      <height>20</height>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip></tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <items>
+        <item></item>
+      </items>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_13</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH7</pv_name>
+          <value>0</value>
+          <description>ch7</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH8</pv_name>
+          <value>0</value>
+          <description>ch8</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH1</pv_name>
+          <value>0</value>
+          <description>CH1</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH2</pv_name>
+          <value>0</value>
+          <description>CH2</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH5</pv_name>
+          <value>0</value>
+          <description>CH5</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH6</pv_name>
+          <value>0</value>
+          <description>CH6</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH3</pv_name>
+          <value>0</value>
+          <description>CH3</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH4</pv_name>
+          <value>0</value>
+          <description>CH4</description>
+        </action>
+      </actions>
+      <text>Read Current</text>
+      <x>112</x>
+      <y>422</y>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_25</name>
+      <pv_name>SAA$(boardid):VERSION</pv_name>
+      <x>612</x>
+      <y>412</y>
+      <width>121</width>
+      <height>40</height>
+      <transparent>true</transparent>
+      <format>4</format>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_31</name>
+      <x>592</x>
+      <y>422</y>
+      <width>1</width>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner</name>
+      <pv_name>ISEG:7200014:0:0:0:VoltageSet</pv_name>
+      <x>652</x>
+      <y>12</y>
+      <width>90</width>
+      <background_color>
+        <color name="Background" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <maximum>400.0</maximum>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_32</name>
+      <text>Set Input Voltage:</text>
+      <x>522</x>
+      <y>2</y>
+      <width>120</width>
+      <height>40</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>ChipID:APD</text>
+      <x>62</x>
+      <y>42</y>
+      <height>38</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <text>1</text>
+      <x>2</x>
+      <y>82</y>
+      <width>40</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_11</name>
+      <text>2</text>
+      <x>2</x>
+      <y>122</y>
+      <width>40</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_12</name>
+      <text>3</text>
+      <x>2</x>
+      <y>162</y>
+      <width>40</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_13</name>
+      <text>4</text>
+      <x>2</x>
+      <y>202</y>
+      <width>40</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_15</name>
+      <text>01:01</text>
+      <x>62</x>
+      <y>80</y>
+      <height>40</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_16</name>
+      <text>5</text>
+      <x>2</x>
+      <y>242</y>
+      <width>40</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_17</name>
+      <text>6</text>
+      <x>2</x>
+      <y>282</y>
+      <width>40</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_18</name>
+      <text>7</text>
+      <x>2</x>
+      <y>322</y>
+      <width>40</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_19</name>
+      <text>8</text>
+      <x>2</x>
+      <y>362</y>
+      <width>40</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_16</name>
+      <x>2</x>
+      <y>362</y>
+      <width>620</width>
+      <height>1</height>
+      <line_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_20</name>
+      <text>01:02</text>
+      <x>62</x>
+      <y>120</y>
+      <height>40</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_21</name>
+      <text>02:01</text>
+      <x>62</x>
+      <y>160</y>
+      <height>40</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_22</name>
+      <text>02:02</text>
+      <x>62</x>
+      <y>200</y>
+      <height>40</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_23</name>
+      <text>03:01</text>
+      <x>62</x>
+      <y>240</y>
+      <height>40</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_24</name>
+      <text>03:02</text>
+      <x>62</x>
+      <y>280</y>
+      <height>40</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_25</name>
+      <text>04:01</text>
+      <x>62</x>
+      <y>320</y>
+      <height>40</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_26</name>
+      <text>04:02</text>
+      <x>62</x>
+      <y>360</y>
+      <height>40</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_27</name>
+      <text>Current</text>
+      <x>170</x>
+      <y>42</y>
+      <height>38</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_28</name>
+      <text>Voltage</text>
+      <x>350</x>
+      <y>42</y>
+      <height>38</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_29</name>
+      <text>DAC</text>
+      <x>540</x>
+      <y>42</y>
+      <height>38</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_30</name>
+      <text>Set DAC</text>
+      <x>660</x>
+      <y>42</y>
+      <width>60</width>
+      <height>38</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <pv_name>SAA$(boardid):ADS:CURRENT:CH7</pv_name>
+      <x>172</x>
+      <y>82</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>SAA$(boardid):ADS:CURRENT:CH8</pv_name>
+      <x>172</x>
+      <y>122</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>SAA$(boardid):ADS:CURRENT:CH1</pv_name>
+      <x>172</x>
+      <y>162</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>SAA$(boardid):ADS:CURRENT:CH2</pv_name>
+      <x>172</x>
+      <y>202</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_4</name>
+      <pv_name>SAA$(boardid):ADS:CURRENT:CH5</pv_name>
+      <x>172</x>
+      <y>242</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_5</name>
+      <pv_name>SAA$(boardid):ADS:CURRENT:CH6</pv_name>
+      <x>172</x>
+      <y>282</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>SAA$(boardid):ADS:CURRENT:CH3</pv_name>
+      <x>172</x>
+      <y>322</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_7</name>
+      <pv_name>SAA$(boardid):ADS:CURRENT:CH4</pv_name>
+      <x>172</x>
+      <y>362</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_8</name>
+      <pv_name>SAA$(boardid):ADS:VOLTAGE:CH7</pv_name>
+      <x>352</x>
+      <y>82</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_9</name>
+      <pv_name>SAA$(boardid):ADS:VOLTAGE:CH8</pv_name>
+      <x>352</x>
+      <y>122</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_10</name>
+      <pv_name>SAA$(boardid):ADS:VOLTAGE:CH1</pv_name>
+      <x>352</x>
+      <y>162</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_11</name>
+      <pv_name>SAA$(boardid):ADS:VOLTAGE:CH2</pv_name>
+      <x>352</x>
+      <y>202</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_12</name>
+      <pv_name>SAA$(boardid):ADS:VOLTAGE:CH5</pv_name>
+      <x>352</x>
+      <y>242</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_13</name>
+      <pv_name>SAA$(boardid):ADS:VOLTAGE:CH6</pv_name>
+      <x>352</x>
+      <y>282</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_14</name>
+      <pv_name>SAA$(boardid):ADS:VOLTAGE:CH3</pv_name>
+      <x>352</x>
+      <y>322</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_15</name>
+      <pv_name>SAA$(boardid):ADS:VOLTAGE:CH4</pv_name>
+      <x>352</x>
+      <y>362</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_9</name>
+      <actions>
+        <action type="open_display">
+          <file>frontend.bob</file>
+          <target>replace</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text>Back</text>
+      <x>2</x>
+      <y>2</y>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_31</name>
+      <text>BoardID: $(boardid)</text>
+      <x>122</x>
+      <y>2</y>
+      <width>166</width>
+      <height>40</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_16</name>
+      <pv_name>SAA$(boardid):DAC:GET:CH4</pv_name>
+      <x>542</x>
+      <y>362</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_17</name>
+      <pv_name>SAA$(boardid):DAC:GET:CH3</pv_name>
+      <x>542</x>
+      <y>322</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_18</name>
+      <pv_name>SAA$(boardid):DAC:GET:CH6</pv_name>
+      <x>542</x>
+      <y>282</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_19</name>
+      <pv_name>SAA$(boardid):DAC:GET:CH5</pv_name>
+      <x>542</x>
+      <y>242</y>
+      <height>40</height>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_16</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH7.SCAN</pv_name>
+          <value>0</value>
+          <description>ch7</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH8.SCAN</pv_name>
+          <value>0</value>
+          <description>ch8</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH1.SCAN</pv_name>
+          <value>0</value>
+          <description>CH1</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH2.SCAN</pv_name>
+          <value>0</value>
+          <description>CH2</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH5.SCAN</pv_name>
+          <value>0</value>
+          <description>CH5</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH6.SCAN</pv_name>
+          <value>0</value>
+          <description>CH6</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH3.SCAN</pv_name>
+          <value>0</value>
+          <description>CH3</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH4.SCAN</pv_name>
+          <value>0</value>
+          <description>CH4</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH7.SCAN</pv_name>
+          <value>0</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH8.SCAN</pv_name>
+          <value>0</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH1.SCAN</pv_name>
+          <value>0</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH2.SCAN</pv_name>
+          <value>0</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH5.SCAN</pv_name>
+          <value>0</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH6.SCAN</pv_name>
+          <value>0</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH3.SCAN</pv_name>
+          <value>0</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH4.SCAN</pv_name>
+          <value>0</value>
+          <description>WritePV</description>
+        </action>
+      </actions>
+      <text>All Passive</text>
+      <x>362</x>
+      <y>422</y>
+      <width>92</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_18</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH7.SCAN</pv_name>
+          <value>4</value>
+          <description>ch7</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH8.SCAN</pv_name>
+          <value>4</value>
+          <description>ch8</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH1.SCAN</pv_name>
+          <value>4</value>
+          <description>CH1</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH2.SCAN</pv_name>
+          <value>4</value>
+          <description>CH2</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH5.SCAN</pv_name>
+          <value>4</value>
+          <description>CH5</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH6.SCAN</pv_name>
+          <value>4</value>
+          <description>CH6</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH3.SCAN</pv_name>
+          <value>4</value>
+          <description>CH3</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:VOLTAGE:CH4.SCAN</pv_name>
+          <value>4</value>
+          <description>CH4</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH7.SCAN</pv_name>
+          <value>4</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH8.SCAN</pv_name>
+          <value>4</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH1.SCAN</pv_name>
+          <value>4</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH2.SCAN</pv_name>
+          <value>4</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH5.SCAN</pv_name>
+          <value>4</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH6.SCAN</pv_name>
+          <value>4</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH3.SCAN</pv_name>
+          <value>4</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>SAA$(boardid):ADS:CURRENT:CH4.SCAN</pv_name>
+          <value>4</value>
+          <description>WritePV</description>
+        </action>
+      </actions>
+      <text>All 0.2 Hz</text>
+      <x>482</x>
+      <y>422</y>
+      <width>92</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+</display>
