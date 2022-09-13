@@ -1,0 +1,6 @@
+record(lsi, "$(user):Ioc:version") {
+    field(DTYP, "Ioc version")
+    field(DESC, "Version string")
+    field(SIZV, "$(SIZV=200)")
+    field(PINI, "YES")
+}

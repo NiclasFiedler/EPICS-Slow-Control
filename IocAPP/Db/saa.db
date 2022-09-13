@@ -1,0 +1,212 @@
+record(ai, "SAA$(boardid):VERSION")
+{
+	field(DESC, "Get version of the SerialAdapter ASIC.")
+	field(DTYP, "DevAiSAA")
+	field(PINI, "RUN")
+	field(INP, "@$(n_saa).$(boardid)")
+}
+
+record(ai, "SAA$(boardid):LM75:TEMP")
+{
+	field(DESC, "Read temperature from LM75.")
+	field(DTYP, "DevLm75")
+	#field(PREC, "1")
+	#field(ESLO, "1e-1")
+	field(EGU,  "°C") 
+	field(SCAN, "5 second")
+	#field(LINR, "LINEAR")
+	#field(HOPR, "75") # Set high operating range
+	#field(LOPR, "-25") # Set low operating range
+	#field(HIHI, "") Set upper alarm limit
+	#field(LOLO, "") Set lower alarm limit
+	#field(HIGH, "") Set upper warning limit
+	#field(LOW, "")  Set lower warning limit
+	#field(HYST, "") Set deadband around alarm limits to avoid to many alarms
+	#field(HHSV,"MINOR") Set HIHI alarm severity
+	#field(LLSV,"MINOR") Set LOLO alarm severity
+	#field(HSV,"MAJOR") Set HIGH alarm severity
+	#field(LSV,"MAJOR") Set LOW alarm severity
+	field(INP, "@$(bitrate).$(boardid)")
+}
+
+record(ai, "SAA$(boardid):SHT21:TEMP")
+{
+        field(DESC, "Read temperature from SHT21.")
+        field(DTYP, "DevSht21")
+        field(PREC, "3")
+	#field(ESLO, "1e-3")
+        field(EGU,  "°C")
+        #field(LINR, "LINEAR")
+	field(SCAN, "5 second")
+	#field(HOPR, "75") # Set high operating range
+        #field(LOPR, "-25") # Set low operating range
+        #field(HIHI, "") # Set upper alarm limit
+        #field(LOLO, "") # Set lower alarm limit        
+	#field(HIGH, "") # Set upper warning limit
+	#field(LOW, "") # Set lower warning limit
+        #field(HYST, "") # Set deadband around alarm limits to avoid to many alarms
+        #field(HHSV,"MINOR") # Set HIHI alarm severity
+        #field(LLSV,"MINOR") # Set LOLO alarm severity
+        #field(HSV,"MAJOR") # Set HIGH alarm severity
+        #field(LSV,"MAJOR") # Set LOW alarm severity
+        field(INP, "@0.$(bitrate).$(boardid)")
+}
+
+record(ai, "SAA$(boardid):SHT21:HUM")
+{
+        field(DESC, "Read humidity from SHT21.")
+        field(DTYP, "DevSht21")
+        #field(PREC, "3")
+        #field(LINR, "LINEAR")
+        #field(ESLO, "1e-3")
+        field(EGU,  "%")
+	field(SCAN, "5 second")
+        #field(HOPR, "100") # Set high operating range
+        #field(LOPR, "0") # Set low operating range
+        #field(HIHI, "") Set upper alarm limit
+        #field(LOLO, "") Set lower alarm limit
+        #field(HIGH, "") Set upper warning limit
+        #field(LOW, "")  Set lower warning limit
+        #field(HYST, "") Set deadband around alarm limits to avoid to many alarms
+        #field(HHSV,"MINOR") Set HIHI alarm severity
+        #field(LLSV,"MINOR") Set LOLO alarm severity
+        #field(HSV,"MAJOR") Set HIGH alarm severity
+        #field(LSV,"MAJOR") Set LOW alarm severity
+        field(INP, "@1.$(bitrate).$(boardid)")
+}
+
+record(ai, "SAA$(boardid):ADS:VOLTAGE:CH$(adschannel)")
+{
+        field(DESC, "Read voltage from ADS1115 channel.")
+        field(DTYP, "DevAds1115")
+        #field(PREC, "4")
+        #field(LINR, "LINEAR")
+        #field(ESLO, "1e-3")
+        field(EGU,  "V")
+	field(SCAN, "Passive")
+        #field(HOPR, "") Set high operating range
+        #field(LOPR, "") Set low operating range
+        #field(HIHI, "") Set upper alarm limit
+        #field(LOLO, "") Set lower alarm limit
+        #field(HIGH, "") Set upper warning limit
+        #field(LOW, "")  Set lower warning limit
+        #field(HYST, "") Set deadband around alarm limits to avoid to many alarms
+        #field(HHSV,"MINOR") Set HIHI alarm severity
+        #field(LLSV,"MINOR") Set LOLO alarm severity
+        #field(HSV,"MAJOR") Set HIGH alarm severity
+        #field(LSV,"MAJOR") Set LOW alarm severity
+        field(INP, "@0.$(adschannel).$(bitrate).$(boardid)")
+}
+
+record(ai, "SAA$(boardid):ADS:CURRENT:CH$(adschannel)")
+{
+        field(DESC, "Read current from ADS1115 channel.")
+        field(DTYP, "DevAds1115")
+        #field(PREC, "4")
+        #field(LINR, "LINEAR")
+        #field(ESLO, 1e-3)
+        field(EGU, "nA")
+	field(SCAN, "Passive")
+        #field(HOPR, "") Set high operating range
+        #field(LOPR, "") Set low operating range
+        #field(HIHI, "") Set upper alarm limit
+        #field(LOLO, "") Set lower alarm limit
+        #field(HIGH, "") Set upper warning limit
+        #field(LOW, "")  Set lower warning limit
+        #field(HYST, "") Set deadband around alarm limits to avoid to many alarms
+        #field(HHSV,"MINOR") Set HIHI alarm severity
+        #field(LLSV,"MINOR") Set LOLO alarm severity
+        #field(HSV,"MAJOR") Set HIGH alarm severity
+        #field(LSV,"MAJOR") Set LOW alarm severity
+        field(INP, "@1.$(adschannel).$(bitrate).$(boardid)")
+}
+
+record(ai, "SAA$(boardid):DAC:GET:CH$(adschannel)")
+{
+        field(DESC, "Read current DAC Value of channel.")
+        field(DTYP, "DevAiDAC")
+	field(PINI, "RUN")
+        field(INP, "@$(adschannel).$(boardid)")
+} 
+
+record(ao, "SAA$(boardid):DAC:SET:CH$(adschannel)")
+{
+        field(DESC, "Set DAC Value of channel.")
+        field(DTYP, "DevAoDAC")	
+	field(OUT, "@$(adschannel).$(boardid)")
+	field(FLNK, "SAA$(boardid):DAC:GET:CH$(adschannel)")
+}
+
+record(ai, "SAA$(boardid):EEPROM:GET")
+{
+        field(DESC, "Read from EERPOM.")
+        field(DTYP, "DevAiEEPROM")
+        field(INP, "@0.$(bitrate).$(boardid)")
+} 
+
+record(ai, "SAA$(boardid):EEPROM:GET:VERSION")
+{
+        field(DESC, "Read from EERPOM.")
+        field(DTYP, "DevAiEEPROM")
+        field(INP, "@1.$(bitrate).$(boardid)")
+	field(PINI, "RUN")
+}
+
+
+record(ao, "SAA$(boardid):EEPROM:REG")
+{
+        field(DESC, "Set the address to be written/read from.")
+        field(DTYP, "DevAoEEPROMREG")
+        field(OUT, "@$(bitrate).$(boardid)")
+	field(FLNK, "SAA$(boardid):EEPROM:GET")
+}
+
+record(ao, "SAA$(boardid):EEPROM:SET")
+{
+        field(DESC, "Set the EEPROM value to be written.")
+        field(DTYP, "DevAoEEPROMSET")
+        field(OUT, "@$(bitrate).$(boardid)")
+}
+
+record(ao, "SAA$(boardid):PCA9554:LED:OFF")
+{
+        field(DESC, "Turn off the PCA controlled LED.")
+        field(DTYP, "DevAoPCA9554")
+        field(OUT, "@0.$(bitrate).$(boardid)")
+}
+
+record(ao, "SAA$(boardid):PCA9554:LED:ON")
+{
+        field(DESC, "Turn on the PCA controlled LED.")
+        field(DTYP, "DevAoPCA9554")
+        field(OUT, "@1.$(bitrate).$(boardid)")
+}
+
+record(ao, "SAA$(boardid):PCA9554:PIN:OFF")
+{
+        field(DESC, "Turn off a single pin.")
+        field(DTYP, "DevAoPCA9554")
+        field(OUT, "@2.$(bitrate).$(boardid)")
+}
+
+record(ao, "SAA$(boardid):PCA9554:PIN:ON")
+{
+        field(DESC, "Turn on a single pin.")
+        field(DTYP, "DevAoPCA9554")
+        field(OUT, "@3.$(bitrate).$(boardid)")
+}
+
+record(ao, "SAA$(boardid):PCA9554:APFEL:OFF")
+{
+        field(DESC, "Turn off all APFEL pins.")
+        field(DTYP, "DevAoPCA9554")
+        field(OUT, "@4.$(bitrate).$(boardid)")
+}
+
+record(ao, "SAA$(boardid):PCA9554:APFEL:ON")
+{
+        field(DESC, "Turn on all APFEL pins.")
+        field(DTYP, "DevAoPCA9554")
+        field(OUT, "@5.$(bitrate).$(boardid)")
+}
+

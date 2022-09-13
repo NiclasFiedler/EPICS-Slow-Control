@@ -1,0 +1,65 @@
+record(ao, "SAA$(boardid):APFEL:$(chipid):DAC:$(apfeldac):SET")
+{
+        field(DESC, "Set APFEL DAC value.")
+        field(DTYP, "DevAoAPFEL")
+        field(OUT, "@$(chipid).$(apfeldac).$(boardid)")
+        field(FLNK, "SAA$(boardid):APFEL:$(chipid):DAC:$(apfeldac):GET")
+}
+
+record(ai, "SAA$(boardid):APFEL:$(chipid):DAC:$(apfeldac):GET")
+{
+        field(DESC, "Get APFEL DAC value.")
+        field(DTYP, "DevAiAPFEL")
+        field(INP, "@$(chipid).$(apfeldac).$(boardid)")
+}
+
+record(bo, "SAA$(boardid):APFEL:$(chipid):RESET:ALL")
+{
+        field(DESC, "Reset all APFEL DAC values.")
+        field(DTYP, "DevBoAPFEL")
+        field(OUT, "@1.$(chipid).0.$(boardid)")
+}
+
+record(bo, "SAA$(boardid):APFEL:$(chipid):SETAMP:HIGH:CH$(channel)")
+{
+        field(DESC, "Set APFEL gain to 32(=1) or 16(=0).")
+        field(DTYP, "DevBoAPFEL")
+        field(OUT, "@0.$(chipid).$(channel).$(boardid)")
+}
+
+record(bo, "SAA$(boardid):APFEL:ALL:CALIB:HW")
+{
+        field(DESC, "HW-Autocalib all APFELs.")
+        field(DTYP, "DevBoAPFEL")
+        field(OUT, "@2.$(chipid).0.$(boardid)")
+}
+
+record(bo, "SAA$(boardid):APFEL:$(chipid):CALIB:HW")
+{
+        field(DESC, "HW-Autocalib APFEL.")
+        field(DTYP, "DevBoAPFEL")
+        field(OUT, "@3.$(chipid).0.$(boardid)")
+}
+
+record(bo, "SAA$(boardid):APFEL:$(chipid):CALIB:SW")
+{
+        field(DESC, "SW-Autocalib APFEL.")
+        field(DTYP, "DevBoAPFEL")
+        field(OUT, "@4.$(chipid).0.$(boardid)")
+}
+
+record(bo, "SAA$(boardid):APFEL:ALL:CALIB:SW")
+{
+        field(DESC, "SW-Autocalib all APFELs.")
+        field(DTYP, "DevBoAPFEL")
+        field(OUT, "@4.$(chipid).0.$(boardid)")
+}
+
+
+#record(ao, "SAA$(boardid):APFEL:$(chipid):TESTPULSE:$(channel)")
+#{
+#        field(DESC, "Reset APFEL DAC values.")
+#        field(DTYP, "DevAoAPFEL")
+#        field(OUT, "@2.$(chipid).0.$(boardid)")
+#}
+
